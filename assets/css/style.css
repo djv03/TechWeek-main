@@ -1,4 +1,6 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu+Mono&display=swap');
+
 body {
   font-family: "Open Sans", sans-serif;
   
@@ -275,9 +277,17 @@ h1, h2, h3, h4, h5, h6 {
 #homepage {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg,#082032 0%, #334756 100% ), url("../img/--bg.jpg") center center no-repeat;
+  background: linear-gradient(45deg,black 30%,rgb(32, 32, 32) 60%,rgb(57, 57, 57) 80%, white 100% );
   /* background-color: #082032; */
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#homepage>p{
+  margin: 33px;
 }
 #homepage .container, #homepage .container-fluid {
   padding-top: 84px;
@@ -433,6 +443,46 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "frozen", serif;
   font-weight: 700;
 }
+
+#hero{
+  font-size: 7rem;
+  color: #fff;
+  text-shadow:
+  0 0 7px #132efe,
+  0 0 10px #132efe,
+  0 0 21px #132efe,
+  0 0 42px lightskyblue,
+  0 0 82px lightskyblue,
+  0 0 92px lightskyblue;
+  font-family: 'Press Start 2P', cursive;
+
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    
+    text-shadow:
+    0 0 7px #132efe,
+    0 0 10px #132efe,
+    0 0 21px #132efe,
+    0 0 42px lightskyblue,
+    0 0 82px lightskyblue,
+    0 0 92px lightskyblue;
+  }
+  20%, 24%, 55% {       
+    text-shadow: none;
+  }
+}
+@media (max-width: 575px) {
+ #hero{
+  font-size: 3rem;
+}
+#homepage{
+   background: linear-gradient(180deg,black 30%,rgb(32, 32, 32) 60%,rgb(57, 57, 57) 80% );
+ }
+ 
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -478,11 +528,6 @@ section {
 
 /* discord logo */
 #discord-btn{
-  position: absolute;
-  left: 0;
-  top: 33rem;
-  left: 43rem;
-
   width: 200px;
   font-size: 20px;
   height: 60px;
@@ -497,20 +542,7 @@ section {
 #discord-btn:hover{
   background:  #1f31ff;
 }
-@media (max-width: 575px) {
-  #discord-btn{
-    /* position */
-    position: absolute;
-    top: 28rem;
-    left: 7rem;
-    
-    /* appearnace */
-    width: 10rem;
-  } 
-  #discord-btn:hover{
-    background:  #1f31ff;
-  }
-}
+
 
 
 /* discord logo end */
