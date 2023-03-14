@@ -501,8 +501,8 @@ section {
   #discord-btn{
     /* position */
     position: absolute;
-    top: 33rem;
-    left: 7.5rem;
+    top: 28rem;
+    left: 7rem;
     
     /* appearnace */
     width: 10rem;
@@ -817,9 +817,9 @@ section {
   margin: 13px;
 }
 /* end of speakers section */
-/* Contact Section*/
+/* team Section*/
 
-#contact {
+#team {
   display: flex;
   align-items: center;
   padding: 70px 0px;
@@ -827,7 +827,7 @@ section {
   background-color: #161623;
   min-height: 100vh;
 }
-#contact .section-title h2 {
+#team .section-title h2 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
@@ -837,7 +837,7 @@ section {
   color: #FF4C29;
 }
 
-#contact .container{
+#team .container{
   position: relative;
   z-index: 1;
   display: flex;
@@ -846,7 +846,7 @@ section {
   margin: 40px 0;
 }
 
-#contact .container .card{
+#team .container .card{
   position: relative;
   width: 300px;
   height: 400px;
@@ -860,12 +860,12 @@ section {
   backdrop-filter: blur(10px);
 }
 
-#contact .img{
+#team .img{
   height: 200px;
   width: 230px;
 }
 
-#contact .container .card .content
+#team .container .card .content
 {
   position: relative;
   display: flex;
@@ -876,14 +876,14 @@ section {
   transition: 0.5s;
 }
 
-#contact .container .card:hover .content{
+#team .container .card:hover .content{
   opacity: 1;
   transform: translateY(-20px);
   transition-duration: 0.5s;
   
 }
 
-#contact .container .card .content .imgBx
+#team .container .card .content .imgBx
 {
   position: relative;
   width: 150px;
@@ -894,7 +894,7 @@ section {
 
 }
 
-#contact .container .card .content .imgBx img{
+#team .container .card .content .imgBx img{
   position: absolute;
   top: 0;
   left: 0;
@@ -903,7 +903,7 @@ section {
   object-fit: cover;
 }
 
-#contact .container .card .content .contentBx h3{
+#team .container .card .content .contentBx h3{
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -914,20 +914,20 @@ section {
   line-height: 1.1em;
 }
 
-#contact .container .card .content .contentBx h3 span{
+#team .container .card .content .contentBx h3 span{
   font-size: 12px;
   font-weight: 300;
   text-transform: initial;
 }
 
-#contact .container .card .sci{
+#team .container .card .sci{
   position: absolute;
   bottom: 50px;
   display: flex;
   
 }
 
-#contact .container .card .sci  li{
+#team .container .card .sci  li{
   margin: auto;
   transform: translateY(40px);
   transition: 1.0s;
@@ -935,12 +935,12 @@ section {
   transition-delay: calc(0.5s * var(--i));
 }
 
-#contact .container .card:hover .sci li{
+#team .container .card:hover .sci li{
   transform: translateY(0px);
   opacity: 1;
 }
 
-#contact .container .card .sci  li a{
+#team .container .card .sci  li a{
   color: #fff;
   font-size: 40px;
   position: relative;
@@ -948,24 +948,53 @@ section {
   top: 29px;
 }
 
-#contact .carousel .carousel-fade .carousel-item {
+#team .carousel .carousel-fade .carousel-item {
   display: block;
   opacity: 0;
   transition: opacity ease-out .7s;
 }
 
-#contact .carousel .carousel-fade .carousel-item.active {
+#team .carousel .carousel-fade .carousel-item.active {
   opacity: 1 !important;
 }
 
 @media (max-width: 768px) {
-  #contact .section-title h2 {
+  #team .section-title h2 {
     left: 0px;
     bottom: 0px;
   }
 
 }
-/* End Contact Section*/
+/* End team Section*/
+
+/* Sponsors */
+.sponsors{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 33rem; */
+
+  background-color: #082032;
+}
+.sponsors >h1{
+  /* border: 2px solid red; */
+  color: #1ddde8;
+  margin-bottom: 133px;
+}
+.sponsors-container{
+  width: 100vw;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 133px;
+}
+.sponsors-img{
+  height: 3rem;
+  width: 3rem;
+}
+/* end ofSponsors */
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -974,16 +1003,16 @@ section {
   font-size: 14px;
   background: #000;
   background-size: cover;
-  height: 170px;
+  height: 100px;
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
   position: relative;
 }
-#footer .footer-top .footer-contact {
+#footer .footer-top .footer-team {
   margin-bottom: 30px;
 }
-#footer .footer-top .footer-contact h3 {
+#footer .footer-top .footer-team h3 {
   font-size: 28px;
   margin: 0 0 30px 0;
   padding: 2px 0 2px 0;
@@ -991,7 +1020,7 @@ section {
   font-weight: 500;
   text-transform: uppercase;
 }
-#footer .footer-top .footer-contact p {
+#footer .footer-top .footer-team p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
