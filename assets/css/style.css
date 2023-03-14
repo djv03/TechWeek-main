@@ -983,16 +983,20 @@ section {
   margin-bottom: 133px;
 }
 .sponsors-container{
-  width: 100vw;
+  width: 100%;
   /* border: 2px solid red; */
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   align-items: center;
   margin-bottom: 133px;
 }
 .sponsors-img{
   height: 3rem;
   width: 3rem;
+
+  margin: 33px;
 }
 /* end ofSponsors */
 /*--------------------------------------------------------------
