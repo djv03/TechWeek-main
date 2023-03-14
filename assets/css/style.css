@@ -476,6 +476,45 @@ section {
   margin-bottom: 0;
 }
 
+/* discord logo */
+#discord-btn{
+  position: absolute;
+  left: 0;
+  top: 33rem;
+  left: 43rem;
+
+  width: 200px;
+  font-size: 20px;
+  height: 60px;
+  border: none;
+  outline: none;
+  background:  #5865F2;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+#discord-btn:hover{
+  background:  #1f31ff;
+}
+@media (max-width: 575px) {
+  #discord-btn{
+    /* position */
+    position: absolute;
+    top: 33rem;
+    left: 7.5rem;
+    
+    /* appearnace */
+    width: 10rem;
+  } 
+  #discord-btn:hover{
+    background:  #1f31ff;
+  }
+}
+
+
+/* discord logo end */
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
