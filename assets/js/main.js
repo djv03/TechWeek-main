@@ -261,13 +261,27 @@
 })()
 
 // Initiate Venobox
-$(document).ready(function(){
-  $('.venobox').venobox({
-    spinner: 'double-bounce',
-    spinColor: '#FF4C29',
-    closeColor: 'red',
-    bgcolor: '#FFF3E4',
-    titleColor: '#FF4C29',
-  }); 
-});
-$("#firstlink").venobox().trigger('click');
+// $(document).ready(function(){
+//   $('.venobox').venobox({
+//     spinner: 'double-bounce',
+//     spinColor: '#FF4C29',
+//     closeColor: 'red',
+//     bgcolor: '#FFF3E4',
+//     titleColor: '#FF4C29',
+//   }); 
+// });
+// $("#firstlink").venobox().trigger('click');
+
+const btnToggle = document.querySelector(".btnEvent");
+const textToToggle = document.querySelector(".visibleBtn");
+
+btnToggle.addEventListener("mouseenter", () => {
+  textToToggle.classList.remove("visibleBtn");
+  // console.log(btnToggle.innerText);
+  // btnToggle.innerHTML = '<button class="btn btnEvent"><p>Event on Flutter</p></button>'
+})
+
+btnToggle.addEventListener("mouseleave", () => {
+  textToToggle.classList.add("visibleBtn");
+  // btnToggle.innerText = "Flutter";
+})

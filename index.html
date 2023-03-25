@@ -34,9 +34,9 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top home-section">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="index.html"><img src="assets/img/techweekLogopng2.png " class="img fluid" alt=""></a>
+      <h1 class="logo"><a href="index.html"><img src="./assets/img/logo (1).svg" class="img fluid" alt="logo-main"></a>
       </h1>
       <nav id="navbar" class="navbar">
         <ul>
@@ -56,8 +56,11 @@
   <!-- ======= HomePage ======= -->
   <section id="homepage" class="home-section">
     <h2 >presenting you</h2>
-    <p id="hero">TechWeek</p>
-      <a  href="https://youtube.com/"><button id="discord-btn">join Discord</button></a> 
+    <div class="hero-img-container">
+      <img src="./assets/img/Tech week logo .svg" class="home-img"/>
+    </div>
+    <!-- <p id="hero">TechWeek</p> -->
+      <a  href="https://discord.gg/gUNtPBCF" target="_blank"><button id="discord-btn">Join Discord</button></a> 
     </div>
 
   </section><!-- End HomePage -->
@@ -73,16 +76,13 @@
             <img src="assets/img/techweekLogo.jpg " class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-            <h3>What is Vision ?</h3>
+            <h3>Introduction</h3>
             <ul>
-              <li><i class="bi bi-check-circle"></i> VISION, a College Level Technical Inter-Department Symposium.
-                Vision provides a platform for the students to interact, build network and compete with each other.
-                There are non-technical events too to incorporate fun activities alongside the technical fervour. </li>
-              <li><i class="bi bi-check-circle"></i> College is place for everything and VISION is the key,Enhance your
-                knowledge and show off your skills with fun and excitement!</li>
-              <li><i class="bi bi-check-circle"></i> Vision provides a platform for the students to interact, build
+              <li><i class="bi bi-check-circle"></i> Tech Week is a celebration of tech, uniting the talent of tomorrow in a week-long innovative festival. </li>
+              <li><i class="bi bi-check-circle"></i> The Tech Week aims to provide a platform where the youth of today gains unique knowledgeable insights in diverse domains and skills.</li>
+              <!-- <li><i class="bi bi-check-circle"></i> Vision provides a platform for the students to interact, build
                 network and compete with each other. There are non-technical events too to incorporate fun activities
-                alongside the technical fervour.</li>
+                alongside the technical fervour.</li> -->
             </ul>
           </div>
         </div>
@@ -97,27 +97,30 @@
       <div class="events-container">
         <div class="tech">
           <div class="tech-logo">
-            <img src="assets/img/robot.png" alt="tech-logo">
+            <img src="./assets/img/3.svg" alt="tech-logo" class="tech-img">
           </div>
-          <a href="/assets/html/techEvents.html"><button class="btn">Flutter</button></a>
+          <a href="/assets/html/techEvents.html">
+          <button class="btn btnEvent">Flutter
+            <p class="visibleBtn">Event on Flutter</p>
+          </button></a>
         </div>
         <div class="tech">
           <div class="tech-logo">
-            <img src="assets/img/robot.png" alt="tech-logo">
+            <img src="./assets/img/2.svg" alt="tech-logo" class="tech-img">
           </div>
-          <a href="/assets/html/techEvents.html"><button class="btn">Full stack</button></a>
+          <a href="/assets/html/techEvents.html"><button class="btn">Cyber Security</button></a>
         </div>
         <div class="tech">
           <div class="tech-logo">
-            <img src="assets/img/robot.png" alt="tech-logo">
+            <img src="./assets/img/1.svg" alt="tech-logo" class="tech-img">
           </div>
-          <a href="/assets/html/techEvents.html"><button class="btn">python with data science</button></a>
+          <a href="/assets/html/techEvents.html"><button class="btn">Python with data science</button></a>
         </div>
         <div class="tech">
           <div class="tech-logo">
-            <img src="/assets/img/basketball.png" alt="tech-logo">
+            <img src="./assets/img/Blockchain.svg" alt="tech-logo">
           </div>
-          <a href="/assets/html/nontech.html"><button class="btn">Android </button></a>
+          <a href="/assets/html/nontech.html"><button class="btn">Blockchain</button></a>
         </div>
       </div>
 
@@ -132,9 +135,15 @@
       <div class="speakers-container">
         <div class="tech">
           <div class="tech-logo">
-            <img src="assets/img/robot.png" alt="tech-logo">
+            <img src="./assets/img/team/tech/rahul mad.jpg" alt="tech-logo">
           </div>
-          <a href="/assets/html/techEvents.html"><button class="btn">Dhruvin</button></a>
+          <a href="https://www.linkedin.com/in/0xrahul/" target="_blank"><button class="btn">Rahul Kulkarni</button></a>
+        </div>
+        <div class="tech">
+          <div class="tech-logo">
+            <img src="./assets/img/team/tech/MohitSoni.jpg" alt="tech-logo">
+          </div>
+          <a href="https://www.linkedin.com/in/0xfrost" target="_blank"><button class="btn">Mohit Soni</button></a>
         </div>
         <div class="tech">
           <div class="tech-logo">
@@ -142,18 +151,12 @@
           </div>
           <a href="/assets/html/techEvents.html"><button class="btn">Dhruvin</button></a>
         </div>
-        <div class="tech">
-          <div class="tech-logo">
-            <img src="assets/img/robot.png" alt="tech-logo">
-          </div>
-          <a href="/assets/html/techEvents.html"><button class="btn">Dhruvin</button></a>
-        </div>
-        <div class="tech">
+        <!-- <div class="tech">
           <div class="tech-logo">
             <img src="/assets/img/basketball.png" alt="tech-logo">
           </div>
           <a href="/assets/html/nontech.html"><button class="btn">Dhruvin</button></a>
-        </div>
+        </div> -->
       </div>
 
     </section>
@@ -167,32 +170,101 @@
         </div>
         <div class="card">
           <div class="content">
-            <div class="imgBx"><img class="img" src="/assets/img/team/coordinator/icons8-person-64.png"></div>
+            <div class="imgBx"><img class="img" src="./assets/img/team/coordinator/Axit.jpeg"></div>
             <div class="contentBx">
-              <h3>Dhruvin<br><span>designation</span></h3>
+              <h3>Axit Padaliya<br><span>LEADER</span></h3>
             </div>
           </div>
           <ul class="sci">
             <li class="--i:3">
-              <a href="tel:+919586840317"><i class='bx bx-phone-call bx-flip-vertical bx-tada'
+              <a href="https://www.linkedin.com/in/axit-padaliya-451463202" target="_blank"><i class='bx bx-phone-call bx-flip-vertical bx-tada'
                   style='color:#00ff00'></i></a>
             </li>
           </ul>
         </div>
         <div class="card">
           <div class="content">
-            <div class="imgBx"><img class="img" src="/assets/img/team/coordinator/icons8-person-64.png"></div>
+            <div class="imgBx"><img class="img" src="./assets/img/team/coordinator/Srushti.jpeg"></div>
             <div class="contentBx">
-              <h3>Dhruvin<br><span>designation</span></h3>
+              <h3>Srushti Patel<br><span>CLUB MANAGEMENT HEAD</span></h3>
             </div>
           </div>
           <ul class="sci">
             <li class="--i:3">
-              <a href="tel:+919313632400"><i class='bx bx-phone-call bx-flip-vertical bx-tada'
+              <a href="https://www.linkedin.com/in/srushti-patel-812a89238" target="_blank"><i class='bx bx-phone-call bx-flip-vertical bx-tada'
                   style='color:#00ff00'></i></a>
             </li>
           </ul>
-
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="imgBx"><img class="img" src="./assets/img/team/coordinator/vishal.jpeg"></div>
+            <div class="contentBx">
+              <h3>Vishal Yadav<br><span>EVENT HEAD</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li class="--i:3">
+              <a href="https://www.linkedin.com/in/vishal-yadav-414870208" target="_blank"><i class='bx bx-phone-call bx-flip-vertical bx-tada'
+                  style='color:#00ff00'></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="imgBx"><img class="img" src="./assets/img/team/coordinator/Jehant.jpeg"></div>
+            <div class="contentBx">
+              <h3>Jehant Soni<br><span>TECH HEAD</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li class="--i:3">
+              <a href="https://www.linkedin.com/in/jehant-soni" target="_blank"><i class='bx bx-phone-call bx-flip-vertical bx-tada'
+                  style='color:#00ff00'></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="imgBx"><img class="img" src="./assets/img/team/coordinator/devanshi.jpeg"></div>
+            <div class="contentBx">
+              <h3>Devanshi Patel<br><span>CONTENT HEAD</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li class="--i:3">
+              <a href="tel:+919313632400" target="_blank"><i class='bx bx-phone-call bx-flip-vertical bx-tada'
+                  style='color:#00ff00'></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="imgBx"><img class="img" src="./assets/img/team/coordinator/prachi.jpeg"></div>
+            <div class="contentBx">
+              <h3>Prachi Patel<br><span>SOCIAL MEDIA HEAD</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li class="--i:3">
+              <a href="https://www.linkedin.com/in/prachi-patel-687a38241" target="_blank"><i class='bx bx-phone-call bx-flip-vertical bx-tada'
+                  style='color:#00ff00'></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="content">
+            <div class="imgBx"><img class="img" src="./assets/img/team/coordinator/Dhruvin.jpeg"></div>
+            <div class="contentBx">
+              <h3>Dhruvin Vekariya<br><span>DEVELOPER</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li class="--i:3">
+              <a href="https://www.linkedin.com/in/dhruvin-v-89b503188" target="_blank"><i class='bx bx-phone-call bx-flip-vertical bx-tada'
+                  style='color:#00ff00'></i></a>
+            </li>
+          </ul>
         </div>
 
       </div>
